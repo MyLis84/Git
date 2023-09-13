@@ -1,0 +1,283 @@
+GIT Homework 1
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+Create a new repository JSON
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+git clone git@github.com:MyLis84/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”.
+touch "new.json"
+ 7. Добавить файл под гит.
+ git add new.json
+ 8. Закоммитить файл.
+git commit -m "add new.json"
+ 9. Отправить файл на внешний GitHub репозиторий.
+git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json
+{
+        "person": {
+                "name": "Mariana",
+                "surname": "Silanteva",
+                "age": 38,
+                "pets": 2,
+                "salary": 1000
+        }
+}
+ESC :qw
+
+
+ 11. Отправить изменения на внешний репозиторий.
+ git add new.json
+ git commit -m "edit new.json"
+ git push
+
+ 12. Создать файл 
+touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+vim preferences.json
+{
+        "preferences": {
+                "movie": "Forrest Gump",
+                "series": "The X Files",
+                "meal": "pizza",
+                "season": "summer",
+                "country": "Peru"
+        }
+}
+Esc: wq
+
+ 14. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+touch skills.json
+vim skills.json
+{
+          "skills": [
+          "Postman",
+          "Git",
+          "SQL",
+          "Terminal Linux",
+          "Devtools",
+          "JavaScript",
+          "Mobile testing"]
+  }
+
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+git add preferences.json skills.json
+git commit -m "add json files"
+git push
+
+ 16. На веб интерфейсе создать файл bug_report.json:
+Add file 
+Create new file
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+Commit changes
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON:
+edit this file
+{
+"bug report": {
+"ID_number": "#324789",
+"application": "Vizio",
+"URL": "https://www.vizio.com/",
+"reported by": "Mariana Silanteva",
+"summary": "ZIP_field accepts letters instead of being digits only",
+"steps to reproduce": "main menu > Find a retailer > Enter your ZIP > B15019 > Push button Search",
+"expected result": "if you enter the invalid ZIP code you see error message",
+"actual result": "ZIP_field accepts letters and opens the map with the nearest shops",
+"attachments": null,
+"severity": "major",
+"priority": "medium",
+"environment": "Windows 11 Pro Chrome 116.0.5845.141 (official), (64 bit)",
+"assigned to": "somebody"}
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+Commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+XML
+ 21. Создать внешний репозиторий c названием XML:
+Create a new repository XML
+ 22. Клонировать репозиторий XML на локальный компьютер.
+git clone git@github.com:MyLis84/XML.git
+ 23. Внутри локального XML создать файл “new.xml”:
+touch new.xml
+ 24. Добавить файл под гит:
+git add new.xml
+ 25. Закоммитить файл:
+git commit -m "add new.xml"
+ 26. Отправить файл на внешний GitHub репозиторий:
+git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML:
+   <?xml version="1.0" encoding=UTF-8" ?>
+   <person>
+     <name>Mariana</name>
+     <surname>Silanteva</surname>
+     <age>38</age>
+     <pets>2</pets>
+     <salary>1000</salary>
+   </person>
+
+ 28. Отправить изменения на внешний репозиторий:
+git add new.xml
+git commit -m "edit new.xml"
+git push
+
+ 29. Создать файл preferences.xml:
+touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML:
+vim preferences.xml
+<?xml version="1.0" encoding=UTF-8" ?>
+<preferences>
+    <movie>Forrest Gump</movie>
+    <series>The X Files</series>
+    <meal>pizza</meal>
+    <season>summer</season>
+    <country>Peru</country>
+</preferences>
+Esc: wq
+
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML:
+   touch skills.xml
+   vim skills.xml
+
+   <?xml version="1.0" encoding=UTF-8" ?>
+   <skills>Postman</skills>
+   <skills>Git</skills>
+   <skills>SQL</skills>
+   <skills>Client-server architecture</skills>
+   <skills>Terminal Linux</skills>
+   <skills>Devtools</skills>
+   <skills>JavaScript</skills>
+   <skills>Mobile testing</skills>
+Esc: wq
+ 32. Сделать коммит в одну строку:
+git add preferences.xml skills.xml
+git commit -am "add xml files"
+ 33. Отправить сразу 2 файла на внешний репозиторий:
+git push
+ 34. На веб интерфейсе создать файл bug_report.xml:
+  Add File
+  Create new file
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+  Commit changes
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML:
+ edit this file
+<?xml version="1.0" encoding=UTF-8" ?>
+ <bug report>
+ <ID_number>324789</ID_number>
+ <application>Vizio</application>
+ <pre-conditions>Open the site https://www.vizio.com/, the user don't need to be logged in</pre-conditions>  
+ <URL>https://www.vizio.com/</URL>
+ <reported by>Mariana Silanteva</reported by>
+ <summary>ZIP_field accepts letters instead of being digits                   only</summary>
+ <steps to reproduce>
+   <step1>Open main menu</step1>
+   <step2>Click Find a retailer</step2>
+   <step3>Enter your ZIP B15019</step3>
+   <step4>Click button Search</step4>
+</steps to reproduce>
+ <expected_result>if you enter the invalid ZIP code you see an error message</expected_result>
+ <actual result>ZIP_field accepts letters and opens the map with the nearest shops</actual result>
+ <attachments>Screenshot</attachments>
+ <severity>major</severity>
+ <priority>medium</priority>
+ <environment>Windows 11 Pro Chrome 116.0.5845.141 (official), (64 bit)</environment>
+ <assigned_to>somebody</assigned to>
+</bug report>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+Commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML
+git pull
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT:
+Create a new repository TXT
+
+ 2. Клонировать репозиторий TXT на локальный компьютер:
+git clone git@github.com:MyLis84/TXT.git
+
+ 3. Внутри локального TXT создать файл “new.txt”:
+   touch new.txt
+ 4. Добавить файл под гит:
+git add new.txt
+
+ 5. Закоммитить файл:
+git commit -m "add new.txt"
+
+ 6. Отправить файл на внешний GitHub репозиторий:
+git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT:
+cat > new.txt
+name: Mariana,
+surname: Silanteva,
+age:38,
+pets: 2,
+salary: 1000 USD
+
+ 8. Отправить изменения на внешний репозиторий:
+git commit -am "edit new.txt"
+git push
+ 9. Создать файл preferences.txt:
+touch preferences.txt
+
+ 10. В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате 
+TXT:
+cat > preferences.txt
+movie: Forrest Gump,
+series: The X Files,
+meal: pizza,
+season: summer,
+country: Peru
+
+ 11. Создать файл skills.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT:
+touch skills.txt
+cat > skills.txt
+Skills:
+Postman,
+Git,
+SQL,
+Client-server architecture,
+Terminal Linux,
+Devtools,
+JavaScript,
+Mobile testing
+
+ 12. Сделать коммит в одну строку:
+git add preferences.txt skills.txt
+git commit -am "add txt files"
+
+ 13. Отправить сразу 2 файла на внешний репозиторий:
+git push
+
+ 14. На веб интерфейсе создать файл bug_report.txt:
+Add file Create new file bug_report.txt
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+Commit changes
+
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT:
+Edit this file
+Bug report
+ ID number: #324789
+ Application: Vizio
+ Pre-conditions: Open the site https://www.vizio.com/, the user   don't need to be logged in
+ URL: https://www.vizio.com/
+ Reported by: Mariana Silanteva
+ Summary: ZIP_field accepts letters instead of being digits                    only
+ Steps to reproduce:
+   step1: Open main menu
+   step2: Click Find a retailer
+   step3: Enter invalid ZIP B15019
+   step4: Click button Search
+ Expected result: if you enter the invalid ZIP code you see an error message
+ Actual result: ZIP field accepts letters and opens the map with the nearest shops
+ Attachments: Screenshot
+ Severity: major
+ Priority: medium
+ Environment: Windows 11 Pro Chrome 116.0.5845.141 (official), (64 bit)
+ Assigned to:
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT:
+git pull
