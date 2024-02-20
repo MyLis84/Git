@@ -8,7 +8,7 @@ GitHub. HW_2
 - Charles: git branch Charles
 - Mobile testing: git branch MobileTesting
 
-2. Запушить все ветки на внешний репозиторий: ggit push --all -u
+2. Запушить все ветки на внешний репозиторий: git push --all -u
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта:
  git checkout BugReports
 vim bug_report_structure.txt
